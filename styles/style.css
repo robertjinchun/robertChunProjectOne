@@ -383,8 +383,12 @@ footer button{
  
 }
 @media (max-width:1240px){
+    footer input{
+        width:90%;
+    }
     footer button{
-        width:77%;
+        width:90%;
+        margin-top:2.5%;
     }
     footer .update{
         float:none;
@@ -393,6 +397,7 @@ footer button{
     }
     footer .contact{
         margin-left:20%;
+        
     }
     p{
         font-size:18px;
@@ -401,20 +406,73 @@ footer button{
         font-size:20px;
     }
 }
+@media (max-width:900px){
+        header h1{
+    font-size:65.1px;
+}
+header section p{
+    font-size:17.4px;
+}
+.headerTitle{
+     margin-top:40%;
+}
+}
+@media (max-width:830px){
+    .update{
+        width:100%;
+    }
+footer .wrapperNarrow{
+    width:100%;
+    margin:0 auto;
+} 
+footer nav{
+    float:right;    
+}
+}
+
 @media (max-width:800px){
 
     footer .update{
         float:none;
         margin:0 auto 5% auto;
+        
         text-align:center;
     }
+    footer input{
+        width:90%;
+    }
+    footer button{
+        width:90%;
+    }
     footer .contact{
-        margin-left:20%;
+        margin-left:10%;
     }
     p{
         font-size:18px;
     }
     footer li{
         font-size:20px;
+    }
+    .contact{
+    width:auto;
+    margin-left:10%;
+}
+}
+@media(max-width:420px){
+        footer .contact{
+        margin-left:0%;
+    }
+    footer .contact p{
+        font-size:18px;
+    }
+    footer li{
+        font-size:20px;
+    }
+}
+@media(max-width:400px){
+    footer nav{
+        clear:both;
+        padding-top:3%;
+        padding-left:10%;
     }
 }
