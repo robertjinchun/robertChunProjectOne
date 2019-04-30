@@ -457,6 +457,41 @@ footer nav{
     width:auto;
     margin-left:10%;
 }
+.galleryWidth {
+    width:43%;
+}
+.galleryContainer{
+    margin-left:3%;
+}
+.carImg1{
+    float:left;
+    /* margin-left: 3.5%; */
+}
+.carImg2{
+    float:right;
+}
+    .carImg3{
+        display:none;
+    }      
+    .galleryWidth{
+        width:47%;
+    }
+}
+
+@media(max-width:500px){
+    .leftIcon,.midIcon,.rightIcon{
+        float:none;
+        margin:0 auto;
+    }
+    .leftIcon{
+        padding-top:13%;
+    }
+    .midIcon{
+        padding:13% 0 13% 0;
+    }
+    .rightIcon{
+padding-bottom:13%;
+    }
 }
 @media(max-width:420px){
         footer .contact{
