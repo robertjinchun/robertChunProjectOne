@@ -170,6 +170,7 @@ main article, footer .firstFoot, .copyright{
 }
 .lowPix{
    display: none;
+   /* padding:15% 3% 0% 3%; */
 }
 
 .blogWidth{
@@ -477,11 +478,22 @@ footer nav{
         width:47%;
     }
 }
-
+@media(max-width:650px){
+    .highlight article{
+        margin-left:3%;
+        width:97%;
+    }
+    .newsTitle{
+        width:100%;
+        margin:0;
+    }
+}
 @media(max-width:500px){
     .leftIcon,.midIcon,.rightIcon{
         float:none;
         margin:0 auto;
+        text-align:center;
+        width:100%;
     }
     .leftIcon{
         padding-top:13%;
@@ -490,8 +502,31 @@ footer nav{
         padding:13% 0 13% 0;
     }
     .rightIcon{
-padding-bottom:13%;
+    padding-bottom:13%;
     }
+    header nav{
+        visibility:hidden;
+    }
+    .socIcons{
+        visibility:hidden;
+    }
+header{
+    background-image: url(../assets/redFerrariMob.jpg);
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+.tripleIcons{
+    background-image: url(../assets/whiteTwinMob.jpg);
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    width:100%;
+    
+    /* background-color: */
+    /* max-height:318px; */
+}
+
 }
 @media(max-width:420px){
         footer .contact{
