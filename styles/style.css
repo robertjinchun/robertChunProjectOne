@@ -6,11 +6,14 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 
 .visuallyHidden:not(:focus):not(:active) { position: absolute; width: 1px; height: 1px; margin: -1px;border: 0;padding: 0;white-space: nowrap;clip-path: inset(100%);clip: rect(00 0 0);overflow: hidden;}
 
-body, header, nav, body p, li, ul, article h2, h3{
+body, header, nav, body p, li, ul, article h2, h3, a{
     margin:0;
     padding:0;
     text-decoration:none;
     list-style:none;
+}
+header a, footer a{
+    color:white;
 }
 header{
     background-image: url(../assets/redFerrari3x.jpg);
@@ -18,18 +21,27 @@ header{
     background-position:center;
     background-repeat:no-repeat;
 }
-header h1, header nav p, h2, h3, footer nav li, .tripleIcons p, button{
+header h1, header nav p, h2, h3, footer nav li, .tripleIcons p, button, a div{
     font-family: 'Kanit', sans-serif;
     font-weight:bold;
     font-style:italic;
     text-transform:uppercase;
 }
-main button{
+/* main button{
     width:160px;
     height:50px;
     background-color: #ba0621;
     color:white;
     
+} */
+a div{
+    width:160px;
+    height:50px;
+    background-color: #ba0621;
+    color:white;
+    text-align:center;
+    padding-top:10px;
+    margin-top:46px;
 }
 main .highlight button{
 margin-top:60px;
@@ -96,6 +108,9 @@ main img{
 footer{
     background-color:#6c0918;
 }
+input{
+    text-align:center;
+}
 main article, footer .firstFoot, .copyright{
     font-family: 'Roboto', sans-serif;
     font-size:20px;
@@ -140,7 +155,9 @@ main article, footer .firstFoot, .copyright{
     text-align:center;
     margin:95px;
 }
-
+    header .hamburger{
+        visibility:hidden;
+    }
 .newsTitle{
 
 }
@@ -180,6 +197,9 @@ main article, footer .firstFoot, .copyright{
 .blogSec1 article{
     margin:100px 5% 0px 10%;
     width:35%;
+}
+.blogSec1 article div,.blogSec2 article div{
+    margin:46px auto 0 auto;
 }
 .blogSec1 aside{
     background-color:#5d6c7f;
@@ -358,6 +378,11 @@ footer button{
     .highlight {
         margin: 3% 0;
     }
+    .highlight article div{
+        
+        padding:22px 18px 50px 18px;
+        
+    }
     .blogSec1 article{
         margin-top:30px;
     }
@@ -406,6 +431,12 @@ footer button{
     footer li{
         font-size:20px;
     }
+    header nav{
+        padding-left:3%;
+    }
+    .headerTitle{
+        padding-left:3%;
+    }
 }
 @media (max-width:900px){
         header h1{
@@ -415,7 +446,7 @@ header section p{
     font-size:17.4px;
 }
 .headerTitle{
-     margin-top:40%;
+     margin-top:50%;
 }
 }
 @media (max-width:830px){
@@ -489,6 +520,12 @@ footer nav{
     }
 }
 @media(max-width:500px){
+    /* .blogSec1 article, .blogSec2 article{
+        width:100%;
+    }
+    .blogSec2 article{
+
+    } */
     .leftIcon,.midIcon,.rightIcon{
         float:none;
         margin:0 auto;
@@ -504,8 +541,14 @@ footer nav{
     .rightIcon{
     padding-bottom:13%;
     }
-    header nav{
+    header nav ul, header nav p{
         visibility:hidden;
+        display:none;
+        padding-top: 10px;
+    }
+    header .hamburger{
+        float:right;
+        visibility:visible;
     }
     .socIcons{
         visibility:hidden;
@@ -526,6 +569,14 @@ header{
     /* background-color: */
     /* max-height:318px; */
 }
+        footer .contact{
+        margin-left:2%;
+    }
+    /* footer nav{
+        clear:both;
+        padding-top:3%;
+        padding-left:5%;
+    } */
 
 }
 @media(max-width:420px){
